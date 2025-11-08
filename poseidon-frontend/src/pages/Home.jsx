@@ -128,7 +128,7 @@ const ProductCard = ({ product, BASE_URL, navigate }) => {
 const Home = () => {
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
-  const BASE_URL = "http://localhost:5000";
+  const BASE_URL = "https://poseidon-backend-v2tf.onrender.com";
 
   useEffect(() => {
     const fetchProducts = async () => {
