@@ -76,10 +76,10 @@ const AdminProducts = () => {
   };
 
   // 🖼️ Función para obtener la URL completa de la imagen
-  //const getImageUrl = (path) => {
-  //  if (!path) return null;
-  //  return path.startsWith("http") ? path : `${BASE_URL}${path}`;
-  //};
+  const getImageUrl = (path) => {
+    if (!path) return null;
+    return path.startsWith("http") ? path : `${BASE_URL}${path}`;
+  };
 
   if (loading)
     return (
