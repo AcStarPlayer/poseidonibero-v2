@@ -20,7 +20,7 @@ const app = express();
 // ⚙️ Configuración de middlewares
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000",
+    origin: process.env.FRONTEND_URL || "https://poseidonibero-v2.vercel.app",
     credentials: true,
   })
 );
@@ -89,3 +89,4 @@ mongoose
     console.error("❌ Error conectando a MongoDB:", err.message);
     process.exit(1);
   });
+
