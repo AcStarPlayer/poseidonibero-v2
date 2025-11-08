@@ -1,0 +1,248 @@
+/* 🎨 Estilo general Poseidón Premium */
+.orders-container {
+  font-family: 'Poppins', sans-serif;
+  color: #0d1b4c;
+  background-color: #f6f8fb;
+  padding-bottom: 60px;
+}
+
+.title-orders {
+  color: #0146c7;
+  font-weight: 700;
+  font-size: 2rem;
+  border-left: 6px solid #3d8bff;
+  padding-left: 12px;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+/* 🧾 Tarjeta de pedido */
+.order-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid #e3e8f0;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 70, 199, 0.1);
+}
+
+/* 🧱 Encabezado */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid #eaeef6;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.order-id {
+  color: #0146c7;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.order-date {
+  font-size: 0.9rem;
+  color: #6b7a99;
+}
+
+/* 🛍️ Productos */
+.order-product {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed #e3e8f0;
+}
+
+.order-product-img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 15px;
+  border: 2px solid #eef3fb;
+}
+
+.order-product-info h6 {
+  color: #041133;
+  font-weight: 600;
+}
+
+.order-product-price {
+  color: #0146c7;
+  font-weight: 600;
+}
+
+/* ⚡ Footer del pedido */
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.order-footer-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.order-status {
+  border-radius: 10px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+}
+
+/* 🪟 Modal premium */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(4, 17, 51, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background: linear-gradient(180deg, #ffffff 60%, #f6f9ff 100%);
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 70, 199, 0.2);
+  width: 90%;
+  max-width: 520px;
+  padding: 25px;
+  animation: slideUp 0.4s ease;
+  position: relative;
+}
+
+/* 🧭 Encabezado modal */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0146c7;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #e3e8f0;
+  padding-bottom: 8px;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #6b7a99;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #0146c7;
+}
+
+/* 📦 Cuerpo */
+.modal-body p {
+  margin: 4px 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.modal-body h6 {
+  color: #0146c7;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.modal-product-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.modal-product-item {
+  display: flex;
+  align-items: center;
+  background: #f9fbff;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #e3e8f0;
+  transition: all 0.2s;
+}
+
+.modal-product-item:hover {
+  background: #eef3ff;
+}
+
+.modal-product-item img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+
+/* 💰 Total */
+.modal-total {
+  background: #eaf1ff;
+  border-left: 4px solid #0146c7;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0146c7;
+}
+
+/* 🧾 Footer del modal */
+.modal-footer {
+  border-top: 1.5px solid #e3e8f0;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer .btn-primary {
+  background: linear-gradient(90deg, #0146c7, #3d8bff);
+  border: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.modal-footer .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(1, 70, 199, 0.4);
+}
+
+/* ✨ Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,244 @@
+/* ================================
+   ⚙️ Panel de Administración Poseidón
+   ================================ */
+
+body {
+  background-color: #fbfdfc;
+  font-family: "Poppins", sans-serif;
+  color: #041133;
+}
+
+/* ====== Encabezado principal ====== */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem; /* 🧩 MODIFICACIÓN: más espacio inferior */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.admin-header h2 {
+  color: #041133;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.admin-header h2::before {
+  content: "⚙️";
+  font-size: 1.3rem;
+}
+
+/* ====== Botones ====== */
+.btn-admin {
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+  padding: 0.6rem 1.2rem; /* 🧩 MODIFICACIÓN: botones ligeramente más grandes */
+}
+
+/* 🟦 Crear / Guardar */
+.btn-admin-primary {
+  background-color: #0146c7;
+  color: #fbfdfc;
+  border: none;
+  box-shadow: 0 3px 8px rgba(1, 70, 199, 0.2);
+}
+
+.btn-admin-primary:hover {
+  background-color: #012f8a;
+  transform: translateY(-1px);
+}
+
+/* 🟨 Secundario / Refrescar */
+.btn-admin-secondary {
+  background-color: #afcee2;
+  color: #041133;
+  border: none;
+  box-shadow: 0 2px 6px rgba(175, 206, 226, 0.5);
+}
+
+.btn-admin-secondary:hover {
+  background-color: #8ebad6;
+  transform: translateY(-1px);
+}
+
+/* 🟥 Eliminar */
+.btn-admin-danger {
+  background-color: #c70039;
+  color: white;
+  border: none;
+  box-shadow: 0 3px 8px rgba(199, 0, 57, 0.2);
+}
+
+.btn-admin-danger:hover {
+  background-color: #a0002e;
+  transform: translateY(-1px);
+}
+
+/* 🟧 Editar */
+.btn-admin-warning {
+  background-color: #f8c102;
+  color: #041133;
+  border: none;
+}
+
+.btn-admin-warning:hover {
+  background-color: #d8a902;
+  transform: translateY(-1px);
+}
+
+/* ====== Tabla ====== */
+.table-admin {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  margin-bottom: 2rem; /* 🧩 MODIFICACIÓN: más espacio debajo */
+  border-collapse: separate;
+  border-spacing: 0 10px; /* 🧩 MODIFICACIÓN: espacio entre filas */
+}
+
+.table-admin thead {
+  background-color: #041133;
+  color: #fbfdfc;
+  text-transform: uppercase;
+  font-size: 0.9rem; /* 🧩 MODIFICACIÓN: texto un poco más grande */
+  letter-spacing: 0.5px;
+}
+
+.table-admin tbody tr {
+  transition: all 0.2s ease;
+  background-color: #f9f9f9; /* 🧩 MODIFICACIÓN: filas más claras */
+  border-radius: 12px;
+}
+
+.table-admin tbody tr:hover {
+  background-color: #eef5fc;
+  transform: scale(1.01);
+}
+
+.table-admin td,
+.table-admin th {
+  vertical-align: middle !important;
+  text-align: center;
+  padding: 1rem 1.2rem; /* 🧩 MODIFICACIÓN: más aire en celdas */
+}
+
+/* ====== Imagen del producto ====== */
+.product-img {
+  width: 85px; /* 🧩 MODIFICACIÓN: más grandes */
+  height: 85px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #afcee2;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 🧩 MODIFICACIÓN: sombra suave */
+}
+
+.product-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== Estado vacío ====== */
+.empty-state {
+  text-align: center;
+  color: #888;
+  padding: 4rem 0; /* 🧩 MODIFICACIÓN: más espacio */
+  font-style: italic;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.empty-state h5 {
+  color: #041133;
+}
+
+/* ====== Formulario de Crear / Editar ====== */
+.admin-form {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2.2rem; /* 🧩 MODIFICACIÓN: más espacioso */
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* 🧩 MODIFICACIÓN: formulario más ancho */
+  margin: 0 auto;
+}
+
+.admin-form label {
+  font-weight: 600;
+  color: #041133;
+  margin-bottom: 0.3rem;
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+  border-radius: 10px;
+  border: 1px solid #ccd6e0;
+  padding: 0.7rem; /* 🧩 MODIFICACIÓN: padding aumentado */
+  font-size: 0.95rem;
+  width: 100%;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus,
+.admin-form select:focus {
+  border-color: #0146c7;
+  box-shadow: 0 0 5px rgba(1, 70, 199, 0.3);
+  outline: none;
+}
+
+/* ====== Preview de imagen ====== */
+.image-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+  gap: 1rem; /* 🧩 MODIFICACIÓN: separación entre previews */
+}
+
+.image-preview img {
+  width: 160px; /* 🧩 MODIFICACIÓN: un poco más grandes */
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #0146c7;
+  transition: transform 0.2s ease;
+}
+
+.image-preview img:hover {
+  transform: scale(1.05);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-header h2 {
+    margin-bottom: 1rem;
+  }
+
+  .table-admin {
+    font-size: 0.85rem;
+  }
+
+  .btn-admin {
+    font-size: 0.85rem;
+  }
+
+  .admin-form {
+    padding: 1.5rem;
+  }
+}

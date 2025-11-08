@@ -1,0 +1,31 @@
+:root {
+  --color-primary: #d4af37; /* Dorado */
+  --color-secondary: #afcee2;
+  --color-dark: #041133;
+  --color-light: #fbfdfc;
+}
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar a.nav-link:hover {
+  color: var(--color-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}

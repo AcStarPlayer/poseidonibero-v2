@@ -1,0 +1,168 @@
+/* 🌊 Poseidón Navbar - Estilos personalizados */
+.navbar {
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔱 Marca / Logo */
+.navbar-brand {
+  color: #afcee2 !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffffff !important;
+  transform: scale(1.05);
+}
+
+/* 🔗 Enlaces del menú */
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease, transform 0.2s;
+  color: #fbfdfc !important;
+}
+
+.nav-link:hover {
+  color: #f8c102 !important; /* Amarillo dorado */
+  transform: translateY(-1px);
+}
+
+/* ⚙️ Panel Admin (Dropdown) */
+.dropdown-menu {
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeIn 0.2s ease-in-out;
+  border: 1px solid #e2e2e2;
+  background-color: #fff;
+  min-width: 180px;
+}
+
+.dropdown-item {
+  font-weight: 500;
+  color: #041133;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #0146c7;
+  color: #fff;
+}
+
+/* 🟩 Botón Panel Admin */
+.btn-success.btn-sm.dropdown-toggle {
+  background-color: #01a35f;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-success.btn-sm.dropdown-toggle:hover {
+  background-color: #028c53;
+  transform: translateY(-1px);
+}
+
+/* 🟨 Botón Mis pedidos */
+.btn-outline-warning.btn-sm {
+  color: #ffc107;
+  border-color: #ffc107;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-warning.btn-sm:hover {
+  background-color: #ffc107;
+  color: #041133;
+}
+
+/* 🔒 Botón de cierre de sesión */
+.btn-danger.btn-sm {
+  font-weight: 600;
+  background-color: #d62828;
+  border: none;
+}
+
+.btn-danger.btn-sm:hover {
+  background-color: #b71c1c;
+  transform: translateY(-1px);
+}
+
+/* 🟦 Botones generales */
+.btn {
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 💫 Animación dropdown */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🧱 Ajustes responsive */
+@media (max-width: 991px) {
+  .navbar-nav {
+    background-color: #041133;
+    padding: 1rem;
+    border-top: 2px solid #0146c7;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-item {
+    margin-bottom: 8px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    text-align: center;
+  }
+}
+
+/* ✨ Enlace activo */
+.text-warning.fw-semibold {
+  color: #ffc107 !important;
+  font-weight: 600;
+}
+
+/* 🌟 Botones de usuario (login / register) */
+.btn-outline-light.btn-sm {
+  color: #fbfdfc;
+  border-color: #fbfdfc;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.btn-outline-light.btn-sm:hover {
+  background-color: #fbfdfc;
+  color: #041133;
+}
+
+.btn-warning.btn-sm {
+  background-color: #d4af37;
+  border: none;
+  color: #041133;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.btn-warning.btn-sm:hover {
+  background-color: #f8c102;
+  transform: translateY(-1px);
+}
